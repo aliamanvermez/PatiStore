@@ -7,8 +7,10 @@ export default StyleSheet.create({
         borderRadius: 10,
         flex : 1,
         justifyContent: 'center',
+        maxWidth : 200,
     },
     image : {
+        resizeMode : 'stretch',
         margin: 10,
         height: Dimensions.get('window').height / 4,
         width: Dimensions.get('window').width / 2.5,
@@ -17,6 +19,8 @@ export default StyleSheet.create({
     title : {
         margin: 10,
         fontWeight: 'bold',
+        minHeight : 40,
+
     },
     text : {
         margin: 10,
@@ -24,8 +28,12 @@ export default StyleSheet.create({
         color: 'black',
     },
     stock : {
+        position : 'absolute',
         margin: 10,
+        fontSize : 12,
         color: 'red',
+        right : 1,
+        bottom : 1,
     }
     
 })
